@@ -1,0 +1,137 @@
+{"intents": [
+  {"tag": "greeting",
+   "patterns": ["Hi", "Is anyone there?", "Hello","what's up","hey"],
+   "responses": ["Hi there, how can I help?"],
+   "context_set": ""
+  },
+  {"tag": "goodbye",
+   "patterns": ["Bye", "See you later", "Goodbye","thank you","have a nice day","good day"],
+   "responses": ["Get Well Soon,Bye"]
+  },
+  {"tag": "thanks",
+   "patterns": ["Thanks", "Thank you", "That's helpful"],
+   "responses": ["Happy to help!", "Any time!", "My pleasure"]
+  },
+  {"tag": "what",
+   "patterns": ["I am not feeling well.","i am unwell","i am ill","i have fever","feeling weakness"],
+   "responses": ["Okay. can you tell me what's wrong? what are your symptoms?"]
+  },
+  {
+    "tag": "cold/flu",
+    "patterns": ["My nose is choked.","i have cold.","I have a cough.","My chest is aching.","My chest is aching.","My throat is itching.","Headaches", "body aches", "fever","Nasal congestion", "runny nose","sneezing","Cough","Sore throat"],
+    "responses": ["Okay, this is a symptom of cold/flu.Do not worry.DrBot is at your help.You want me to set up an appointment for you?sure/no"]
+   },
+  {
+    "tag": "allergy",
+    "patterns": ["nasal congestion", "itchy","watery eyes", "sneezing", "stuffy nose","runny nose", "scratchy throat","sore throat","throat clearing"],
+    "responses": ["Okay, this is a symptom of Allergy.Do not worry.DrBot is at your help.You want me to set up an appointment for you?sure/no"]
+  },
+  {
+    "tag": "asthama",
+    "patterns": ["shortness of breath", "chest pain","cough","breath problem","breathing problem","can't breathe","cannot breathe"],
+    "responses": ["Okay, this is a symptom of Asthama.Do not worry.DrBot is at your help.You want me to set up an appointment for you?sure/no"]
+  },
+  {
+    "tag": "diabetes",
+    "patterns": ["dehydration","hunger", "increased urination","increased thirst","thirsty","want to eat"],
+    "responses": ["Okay, this is a symptom of Diabetes.Do not worry.DrBot is at your help.You want me to set up an appointment for you?sure/no"]
+  },
+  {
+    "tag": "bp",
+    "patterns": ["dizziness","shortness of breath","headache","blurred vision","nosebleeds","blood in the urine","red urine","fatigue","chest pain"],
+    "responses": ["Okay, this is a symptom of Diabetes.Do not worry.DrBot is at your help.You want me to set up an appointment for you?sure/no"]
+  }, 
+  {
+    "tag": "dengue",
+    "patterns": ["headache","fever","exhaustion","muscle pain","joint pain","swollen lymph nodes","rash","fever", "itchy rash","headache"],
+    "responses": ["Okay, this is a symptom of Dengue.Do not worry.DrBot is at your help.You want me to set up an appointment for you?sure/no"]
+  },
+  {
+    "tag": "malaria",
+    "patterns": ["fever","chills","headache","nausea","vomiting","weakness","body aches"],
+    "responses": ["Okay, this is a symptom of Malaria.Do not worry.DrBot is at your help.You want me to set up an appointment for you?sure/no"]
+  },
+  {
+    "tag": "jaundice",
+    "patterns": ["Yellow skin","yellow eyes","mucous membrane","whites of the eyes","Light colored skin","excessive sleepiness","stiff muscles","Seizures"],
+    "responses": ["Okay, this is a symptom of Jaundice.Do not worry.DrBot is at your help.You want me to set up an appointment for you?sure/no"]
+  },
+   {
+     "tag": "headache",
+     "patterns":["i have a headache","i have a pain in my head","Headache","Head is heavy"],
+     "responses":["what kind of headache do you have : 1. Migrane headache - intense throbbing pain on just one side of the head. 2. Cluster headaches - severe and recurrent headaches 3. Tension Headache - Ocassional;"]
+   },
+   {
+     "tag": "migrane",
+     "patterns":["i have a migrane headache","Type 1","1"],
+     "responses":["symptom noted. Migraines tend to be recurrent, and each attack may last up to 3 days.Do not worry.DrBot is at your help.You want me to set up an appointment for you?sure/no"]
+   },
+   {
+     "tag": "cluster",
+     "patterns":["i have a cluster headache","Type 2","2"],
+     "responses":["symptom noted. Attacks tend to occur in daily clusters that can persist for weeks or months. They typically take place at the same time of day, which can often be a couple of hours after falling asleep at night.Do not worry.DrBot is at your help.You want me to set up an appointment for you?sure/no"]
+   },
+   {
+     "tag": "tension",
+     "patterns":["i have a tension headache","Type 3","3"],
+     "responses":["symptom noted.It is temperory.Do not worry.DrBot is at your help.You want me to set up an appointment for you?sure/no"]
+   },
+   {"tag": "fracture",
+    "patterns": ["my hand is aching","my hand is hurt","hand is paining","my leg is aching","my leg hurts","leg got broken","i am suffering from pain","my joint is aching","knee is aching","hurts near knees","hurts below knees"],
+    "responses": ["okay. It maybe fracture.Do not worry.DrBot is at your help.You want me to set up an appointment for you?sure/no"],
+    "context_set": ""
+   },
+  {
+    "tag": "affirmative",
+    "patterns": ["sure","do it","make appointment","find me a doctor","book appointment","any doctor available","show doctors"],
+    "responses": ["Dr.Malhotra has some free slots.Would you like to make an appointment? yes/no","Dr.Joseph has some free slots.Would you like to make an appointment? yes/no"]
+  },
+  {
+    "tag": "yes",
+    "patterns": ["yes","yup","y"],
+    "responses": ["making an appointment for you...which slot you want to book? 1. 11:00am-1:00pm 2. 3:00pm-5:00pm  and Provide your email id "]
+  },
+  {
+    "tag": "no",
+    "patterns": ["no","n"],
+    "responses": ["No problem...take rest.I would suggest you to consult a doctor"]
+  },
+  {
+    "tag": "slot1",
+    "patterns": ["1.","one","11:00am-1:00pm","11-1","11am-1pm"],
+    "responses": ["provide us your email id for future contact"]
+  },
+  {
+    "tag": "slot2",
+    "patterns": ["2.","two","3:00am-5:00pm","3-5","3pm-5pm"],
+    "responses": ["provide us your email id for future contact"]
+  },
+  {
+    "tag": "slot2",
+    "patterns": ["@gmail.com"],
+    "responses": ["we have sent you mail...you can ask anything if u have queries"]
+  },
+  {
+    "tag": "okay",
+    "patterns": ["okay","hmm"],
+    "responses": ["okay.Feel free to ask anything"]
+  },
+  {"tag": "opentoday",
+   "patterns": ["Are you open today?", "When do you open today?", "What are your hours today?","when are you open?","what are your working hours?","when is doctor available"],
+   "responses": ["We're open Mon-Fri 10am-6pm"]
+  },
+  {"tag": "money",
+   "patterns": ["what is total fee?","how much money is required","doctor fees?","treatment fees?","how much you charge?"],
+   "responses": ["consulting fee is rs500 and other significant charges may apply"]
+  },
+  {"tag": "payment",
+   "patterns": ["how should i pay","what is method of payment","do you accept cash","do you accept credit/debit card","is net baning available"],
+   "responses": ["fees should be paid in cash at reception"]
+  },
+  {"tag": "bargain",
+   "patterns": ["can't you keep fees less","i will pay","reduce charges","too much fees","this is very costly","it is a lot"],
+   "responses": ["these are standard charges we cannot accept less"]
+  }
+  
+]
+}

@@ -1,0 +1,5 @@
+ numpy
+- nltk
+- tensorflow
+- tflearn
+-python 3.6
